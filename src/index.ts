@@ -14,7 +14,7 @@ const port: number = parseInt(process.env.PORT || "3000");
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(cors());
-app.use("/pagos", ordenesRouter);
+app.use("/ordenes", ordenesRouter);
 
 const signale = new Signale();
 
